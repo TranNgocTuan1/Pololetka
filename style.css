@@ -32,6 +32,7 @@
     float: left;
     margin-right: 10px;
     margin-left: 5vw;
+    border-radius: 50px;
 }
 
 .main {
@@ -40,9 +41,12 @@
 }
 
 .side{
+    padding-top:25px;
     width:28%;
     margin: 0;
     position: relative;
+    background-color: #00000015;
+    border-radius: 50px;
 }
 
 ul{
@@ -164,11 +168,31 @@ a, a:hover, a:focus, a:active {
     width: 20%;
     text-align: center;
     flex: 0 0 33.333333% ;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    
 }
+.item:hover {
+  background-color: #DACFCF;
+  border-radius: 50px ;
+  opacity: 1;
+  animation: fade 2s linear;
+  transition: 0.3s;
+
+}
+
+.item p{
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 .item img{
     width: 250px;
     height: 240px;
+    border-radius: 100%;
 }
 
 ul {
@@ -242,6 +266,52 @@ ul {
 
   }
 
+
+
+  /*footer*/
+
+footer{
+
+    padding: 3em 1em;
+
+}
+
+hr{
+  border-top: 5px solid #bbb;
+  border-radius: 5px;
+}
+
+footer a{
+    color: inherit;
+}
+
+.footer-nav, 
+.footer-social{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a{
+    padding: 0.75em;
+    text-decoration: none;
+}
+
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+
+.social-link{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.social-icon{
+    width: 30px;
+}
   @media screen and (max-width: 500px) {
     .contain {
         margin: 0 auto;
